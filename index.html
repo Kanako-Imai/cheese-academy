@@ -183,84 +183,60 @@
   </div contacttext>
   </div CONTACT>
 
+
+  <div class="table">
+    <div class="row3">
+      <div class="cell-top">名前</div>
+      <div class="cell-mid">カナ</div>
+      <div class="cell-mid">メールアドレス</div>
+      <div class="cell-mid">チーズアカデミーを<br>知ったきっかけ</div>
+      <div class="cell-mid-row5">志望動機</div>
+      <div class="cell-bottom">詳細</div>  
+    </div>
+
 <form>
-<form class="form" action="#" method="post">
+    <div class="row4">
+      <div class="cell-top"> <input type="text" class="input-small" name="name" required></div>
+      <div class="cell-mid"><input type="text" class="input-small" name="kana" required></div>
+      <div class="cell-mid"><input type="text" class="input-small" name="email" required></div>
+      <div class="cell-mid">
+        <select class="input-small" name="know-how" required>
+        <option value="">選択してください</option>
+        <option value="google">Google選択</option>
+        <option value="sns">SNS</option>
+        <option value="referral">紹介</option>
+        <option value="referral">たまたま通りかかった</option>
+        <option value="referral">その他</option>
+      </select></div>
+      <div class="cell-mid-row5">
+        <div>
+          <input type="checkbox" class="motivation" name="motivation" value="企業をしたい">
+          <label for="motivation1">起業をしたい</label>
+        </div>
+        <div>
+          <input type="checkbox" class="motivation" name="motivation" value="チーズ系企業に就職・転職したい">
+          <label for="motivation2">チーズ系企業に就職・転職したい</label>
+        </div>
+        <div>
+          <input type="checkbox" class="motivation" name="motivation" value="チーズと関わる仕事をしており、仕事に生かしたい">
+          <label for="motivation3">チーズと関わる仕事をしており、仕事に生かしたい</label>
+        </div>
+        <div>
+          <input type="checkbox" class="motivation" name="motivation" value="チーズの教養を身に着けたい">
+          <label for="motivation3">チーズの教養を身に着けたい</label>
+        </div>
+      </div>
+      <div class="bottom"><input type="text" id="detail" name="detail" required>
+    </div>
 
-<!--   名前 -->
-<div class="item">
-<label class="lavel_left" for="name">名前</label>
-<input id="name" type="text" placeholder="名前を入力" required><br>
-</div>
-
-<!--   カナ -->
-<div class="item">
-<label class="lavel_left" for="kana">カナ</label>
-<input id="name" type="text" placeholder="カナを入力" required><br>
-</div> 
-
-<!--   メールアドレス -->
-<div class="item">
-<label class="lavel_left" for="email">メールアドレス</label>
-<input id="email" type="email" placeholder="メールアドレスを入力" required><br>
-</div>
-
- <!--   チーズアカデミーを知ったきっかけ -->
-<div class="item">
-<label class="lavel_left" for="きっかけ">チーズアカデミーを知ったきっかけ</label>
-<select name="きっかけ" id="きっかけ">
-<option value="">以下から選択してください</option>
-<option value="google">google選択</option>
-<option value="SNS">SNS</option>
-<option value="紹介">紹介</option>
-<option value="たまたま">たまたま通りかかった</option>
-<option value="その他">その他</option>
-</select><br>
-</div>
-
-<!--   志望動機 -->
-<div class="item">
-<label class = "lavel_left" for="志望動機">志望動機</label>
-
-<div class="checkbox">
-<div class="checkbox1">
-<input type="checkbox" name="status" value="起業" id="起業"><br> 
-<label for="起業">起業したい</label>
-</div checkbox1>
-<div class="checkbox2">
-<input type="checkbox" name="status" value="チーズ系" id="チーズ系"><br>
-<label for="チーズ系">チーズ系企業に転職・就職したい</label>
-</div checkbox2>
-<div class="checkbox3">
-<input type="checkbox" name="status" value="チーズ" id="チーズ"><br>
-<label for="チーズ">チーズと関わる仕事をしており、仕事に生かしたい</label>
-</div checkbox3> 
-<div class="checkbox4">
-<input type="checkbox" name="status" value="チーズの" id="チーズの"><br>
-<label for="チーズの">チーズの教養を身につけたい</label>
-</div checkbox4>
-</div checkbox>
-</div item>
-  
-<!--   詳細 -->
-<div class="item">
-<label class="lavel_left" for="remarks">詳細</label><br>
-<textarea name="textarea" id="remarks" placeholder="詳細を入力"></textarea><br>
-</div> 
 
 <!--   送信 -->
 <div class="button">
-<p><input class="button" type="submit" value="送信する"></p>
-</div>   
-  
+  <p><input class="button" type="submit" value="送信する"></p>
+  </div>   
 </form>
-
-
-
-
-
-
-
-
+</div> 
+  
 <footer class="footer">
 copyrights 2016 Cheeese Academy Tokyo All RIghts Reserved.
 </footer> 
